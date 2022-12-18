@@ -1,0 +1,36 @@
+{
+  "name": "@zhilin/utils",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "test:once": "vitest run",
+    "coverage": "vitest run --coverage",
+    "build": "unbuild",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "commit": "git-cz"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "unbuild": "^1.0.1",
+    "vitest": "^0.25.2"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^0.31.0",
+    "@vitest/coverage-c8": "^0.25.2",
+    "cz-conventional-changelog-zh": "^0.0.2",
+    "eslint": "^8.28.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog-zh"
+    }
+  }
+}
